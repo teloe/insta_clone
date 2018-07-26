@@ -18,5 +18,10 @@
     <%= yield %>
 
     <%= render "shared/footer" %>
+    <% if flash.any? %>
+      <script type="text/javascript">
+        toastr.success("blah blah");
+      </script>
+    <% end %>
   </body>
 </html>
